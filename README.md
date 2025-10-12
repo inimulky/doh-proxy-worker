@@ -59,6 +59,41 @@ npm run dev
 npm run deploy
 ```
 
+### Deploy with Wrangler CLI
+
+For more control over deployment, you can use Wrangler CLI directly:
+
+1. Install Wrangler globally (if not already installed):
+   ```bash
+   npm install -g wrangler
+   ```
+
+2. Authenticate with your Cloudflare account:
+   ```bash
+   wrangler login
+   ```
+
+3. Deploy to development environment:
+   ```bash
+   wrangler deploy --env dev
+   ```
+
+4. Deploy to production environment:
+   ```bash
+   wrangler deploy --env production
+   ```
+
+5. View your deployed worker:
+   ```bash
+   wrangler deployments list
+   ```
+
+Additional Wrangler commands:
+- `wrangler dev` - Start a local development server
+- `wrangler tail` - View real-time logs from your deployed worker
+- `wrangler secret put <key>` - Add secrets to your worker
+- `wrangler delete` - Remove your worker from Cloudflare
+
 ## Usage
 
 After deployment, you can use this worker as a DoH endpoint:
