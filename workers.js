@@ -4,31 +4,53 @@
  */
 
 // List of DoH providers for load balancing and failover
+// Includes both general DNS providers and ad-blocking focused providers
 const DOH_PROVIDERS = [
+  // General DNS providers
   {
     name: "Cloudflare",
     url: "https://cloudflare-dns.com/dns-query",
-    weight: 30
+    weight: 20
   },
   {
     name: "Google",
     url: "https://dns.google/dns-query",
-    weight: 25
+    weight: 15
   },
   {
     name: "Quad9",
     url: "https://dns.quad9.net/dns-query",
-    weight: 20
+    weight: 15
   },
   {
     name: "OpenDNS",
     url: "https://doh.opendns.com/dns-query",
-    weight: 15
+    weight: 10
   },
+  // Ad-blocking focused providers
   {
     name: "AdGuard",
     url: "https://dns.adguard.com/dns-query",
     weight: 10
+    // Blocks ads, trackers, and malicious domains
+  },
+  {
+    name: "ControlD",
+    url: "https://freedns.controld.com/p2",
+    weight: 10
+    // Blocks ads and tracking domains
+  },
+  {
+    name: "Mullvad",
+    url: "https://adblock.dns.mullvad.net/dns-query",
+    weight: 10
+    // Blocks ads and trackers
+  },
+  {
+    name: "NextDNS",
+    url: "https://dns.nextdns.io/dns-query",
+    weight: 10
+    // Blocks ads, trackers, and malicious domains
   }
 ];
 
@@ -354,6 +376,13 @@ function serveLandingPage(request) {
         word-break: break-all;
       }
       
+      .provider-description {
+        color: var(--gray);
+        font-size: 0.8rem;
+        margin-top: 8px;
+        font-style: italic;
+      }
+      
       .usage-examples {
         background: var(--dark);
         color: white;
@@ -492,11 +521,12 @@ function serveLandingPage(request) {
       
       <div class="card">
         <h2>📡 Supported DNS Providers</h2>
+        <p>This proxy supports both general DNS providers and ad-blocking focused providers for enhanced privacy and security.</p>
         <div class="providers">
           <div class="provider">
             <div class="provider-header">
               <div class="provider-name">Cloudflare</div>
-              <div class="provider-weight">30%</div>
+              <div class="provider-weight">20%</div>
             </div>
             <div class="provider-url">https://cloudflare-dns.com/dns-query</div>
           </div>
@@ -504,7 +534,7 @@ function serveLandingPage(request) {
           <div class="provider">
             <div class="provider-header">
               <div class="provider-name">Google</div>
-              <div class="provider-weight">25%</div>
+              <div class="provider-weight">15%</div>
             </div>
             <div class="provider-url">https://dns.google/dns-query</div>
           </div>
@@ -512,7 +542,7 @@ function serveLandingPage(request) {
           <div class="provider">
             <div class="provider-header">
               <div class="provider-name">Quad9</div>
-              <div class="provider-weight">20%</div>
+              <div class="provider-weight">15%</div>
             </div>
             <div class="provider-url">https://dns.quad9.net/dns-query</div>
           </div>
@@ -520,7 +550,7 @@ function serveLandingPage(request) {
           <div class="provider">
             <div class="provider-header">
               <div class="provider-name">OpenDNS</div>
-              <div class="provider-weight">15%</div>
+              <div class="provider-weight">10%</div>
             </div>
             <div class="provider-url">https://doh.opendns.com/dns-query</div>
           </div>
@@ -531,6 +561,34 @@ function serveLandingPage(request) {
               <div class="provider-weight">10%</div>
             </div>
             <div class="provider-url">https://dns.adguard.com/dns-query</div>
+            <div class="provider-description">Blocks ads, trackers, and malicious domains</div>
+          </div>
+          
+          <div class="provider">
+            <div class="provider-header">
+              <div class="provider-name">ControlD</div>
+              <div class="provider-weight">10%</div>
+            </div>
+            <div class="provider-url">https://freedns.controld.com/p2</div>
+            <div class="provider-description">Blocks ads and tracking domains</div>
+          </div>
+          
+          <div class="provider">
+            <div class="provider-header">
+              <div class="provider-name">Mullvad</div>
+              <div class="provider-weight">10%</div>
+            </div>
+            <div class="provider-url">https://adblock.dns.mullvad.net/dns-query</div>
+            <div class="provider-description">Blocks ads and trackers</div>
+          </div>
+          
+          <div class="provider">
+            <div class="provider-header">
+              <div class="provider-name">NextDNS</div>
+              <div class="provider-weight">10%</div>
+            </div>
+            <div class="provider-url">https://dns.nextdns.io/dns-query</div>
+            <div class="provider-description">Blocks ads, trackers, and malicious domains</div>
           </div>
         </div>
       </div>
@@ -816,6 +874,9 @@ Binary DNS Query → Base64url Encoding → URL Parameter
         </ul>
         
         <p>This encoding requirement ensures that DNS queries can be safely transmitted over HTTPS while maintaining compatibility with web standards and the DoH protocol specification.</p>
+        
+        <h2>Ad-Blocking Support</h2>
+        <p>This DoH proxy includes support for ad-blocking DNS providers. When using this service, DNS queries are automatically distributed across multiple providers including specialized ad-blocking services like AdGuard, ControlD, Mullvad, and NextDNS. These providers block ads, trackers, and malicious domains at the DNS level, providing an additional layer of privacy and security.</p>
         
         <a href="/" class="back-link">← Back to Main Page</a>
       </div>
